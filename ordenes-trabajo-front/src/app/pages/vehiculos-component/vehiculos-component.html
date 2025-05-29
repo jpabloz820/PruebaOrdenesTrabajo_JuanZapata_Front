@@ -1,0 +1,24 @@
+<div class="container mt-4">
+  <h3>Listado de Vehículos</h3>
+  <table class="table table-bordered table-striped mt-3">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Placa</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Año</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vehiculo of vehiculos">
+        <td>{{ vehiculo.id }}</td>
+        <td>{{ vehiculo.plate }}</td>
+        <td>{{ vehiculo.brand }}</td>
+        <td>{{ vehiculo.model }}</td>
+        <td>{{ vehiculo.year }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
