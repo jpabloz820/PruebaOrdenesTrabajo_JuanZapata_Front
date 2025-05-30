@@ -28,4 +28,8 @@ export class AuthService {
       responseType: 'text'
     });
   }
+  logout(): void {
+  localStorage.removeItem('auth_token');
+  }
+
 }
